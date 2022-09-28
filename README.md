@@ -27,3 +27,9 @@ docker attach <ID or name> # e.g. `docker attach 20919c49d6e5` would attach to t
 ```
 
 This allows you to attach a shell to a running container and mess around with it. Useful if you need to inspect something or see running logs.
+
+To kill a container
+
+```bash
+docker kill <IDs or names of containers> # e.g. `docker kill fae0f0974d3d 803e1721dad3 20919c49d6e5` would kill those three containers
+```
