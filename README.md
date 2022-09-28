@@ -20,4 +20,6 @@ docker run alpine:3.10 ls # run alpine with the ls command
 docker run alpine:3.10 ls -al # command at the end is passed into the container
 
 docker run --detach -it ubuntu:bionic # or, to be shorter: docker run -dit ubuntu:bionic
+
+docker ps # view the containers
 ```
