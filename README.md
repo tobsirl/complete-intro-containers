@@ -16,4 +16,6 @@ If you don't specify what the container is supposed to do it will close immediat
 docker run alpine:3.10
 
 docker run alpine:3.10 ls # run alpine with the ls command
+
+docker run alpine:3.10 ls -al # command at the end is passed into the container
 ```
