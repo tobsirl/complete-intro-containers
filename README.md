@@ -33,3 +33,12 @@ To kill a container
 ```bash
 docker kill <IDs or names of containers> # e.g. `docker kill fae0f0974d3d 803e1721dad3 20919c49d6e5` would kill those three containers
 ```
+
+## --name and --rm
+
+Give your containers names
+
+```bash
+docker run -dit --name my-ubuntu ubuntu:bionic
+docker kill my-ubuntu # easier than ids
+```
