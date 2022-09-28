@@ -22,4 +22,8 @@ docker run alpine:3.10 ls -al # command at the end is passed into the container
 docker run --detach -it ubuntu:bionic # or, to be shorter: docker run -dit ubuntu:bionic
 
 docker ps # view the containers
+
+docker attach <ID or name> # e.g. `docker attach 20919c49d6e5` would attach to that container
 ```
+
+This allows you to attach a shell to a running container and mess around with it. Useful if you need to inspect something or see running logs.
