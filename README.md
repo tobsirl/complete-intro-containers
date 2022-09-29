@@ -44,6 +44,7 @@ docker kill my-ubuntu # easier than ids
 ```
 
 Docker keeps the metadata around until you tell it to stop.
+
 ```bash
 docker ps --all # this will display all metadata for shutdown containers
 
@@ -52,4 +53,12 @@ docker rm my-ubuntu # would free up the name again
 docker container prune # this will free up all existing stopped containers
 
 docker run --rm -dit --name my-ubuntu ubuntu:bionic # This will automatically clean up the containers
+```
+
+## Tags
+
+Tags allow you to specific which version you install. For example
+
+```bash
+docker run -it node:8 bash
 ```
