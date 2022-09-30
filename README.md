@@ -103,3 +103,11 @@ This allows you to execute a command against a running container. This is differ
 ### import / export
 
 Allows you to dump out your container to a tar ball. You can also import a tar ball as well.
+
+### history
+
+We'll get into layers in a bit but this allow you to see how this Docker image's layer composition has changed over time and how recently.
+
+```bash
+docker history node
+```
