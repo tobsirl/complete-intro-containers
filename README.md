@@ -128,3 +128,9 @@ Allows you to see processes running on a container
 docker run mongo
 docker top <ID outputted by previous command> # you should see MongoDB running
 ```
+
+### rm / rmi
+
+If you run `docker ps --all` it'll show all containers you've stopped running in addition to the runs you're running. If you want to remove something from this list, you can do `docker rm <id or name>`.
+
+If you want to remove an image from your computer (to save space or whatever) you can run `docker rmi mongo` and it'll delete the image from your computer. This isn't a big deal since you can always reload it again
