@@ -73,3 +73,13 @@ docker run -it node:8 bash
 docker pull jturpin/hollywood
 docker run -it jturpin/hollywood hollywood # notice it's already loaded and cached here; it doesn't redownload it
 ```
+
+`push` allows you to push containers to whatever registry you're connected to.
+
+### inspect
+
+```bash
+docker inspect node
+```
+
+This will dump out a lot of info about the container. Helpful when figuring out what's going on with a container
