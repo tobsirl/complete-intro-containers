@@ -99,3 +99,7 @@ docker kill <ID or name> # see container is gone
 ### exec
 
 This allows you to execute a command against a running container. This is different from `docker run` because `docker run` will start a new container whereas `docker exec` runs the command in an already-running container.
+
+### import / export
+
+Allows you to dump out your container to a tar ball. You can also import a tar ball as well.
