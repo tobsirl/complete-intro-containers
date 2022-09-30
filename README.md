@@ -62,3 +62,9 @@ Tags allow you to specific which version you install. For example
 ```bash
 docker run -it node:8 bash
 ```
+
+## Docker CLI
+
+### pull / push
+
+`pull` allows you to pre-fetch container to run.
