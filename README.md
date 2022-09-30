@@ -119,3 +119,12 @@ Dumps a bunch of info about the host system. Useful if you're on a VM somewhere 
 ```bash
 docker info
 ```
+
+### top
+
+Allows you to see processes running on a container
+
+```bash
+docker run mongo
+docker top <ID outputted by previous command> # you should see MongoDB running
+```
