@@ -68,3 +68,8 @@ docker run -it node:8 bash
 ### pull / push
 
 `pull` allows you to pre-fetch container to run.
+
+```bash
+docker pull jturpin/hollywood
+docker run -it jturpin/hollywood hollywood # notice it's already loaded and cached here; it doesn't redownload it
+```
