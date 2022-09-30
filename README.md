@@ -143,3 +143,7 @@ Very useful to see the output of one of your running containers.
 docker run -d mongo
 docker logs <id from previous command> # see all the logs
 ```
+
+### restart
+
+Pretty self explanatory. Will restart a running container
