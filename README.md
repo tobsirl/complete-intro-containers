@@ -111,3 +111,11 @@ We'll get into layers in a bit but this allow you to see how this Docker image's
 ```bash
 docker history node
 ```
+
+### info
+
+Dumps a bunch of info about the host system. Useful if you're on a VM somewhere and not sure what the environment is.
+
+```bash
+docker info
+```
