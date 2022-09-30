@@ -147,3 +147,12 @@ docker logs <id from previous command> # see all the logs
 ### restart
 
 Pretty self explanatory. Will restart a running container
+
+### search
+
+If you want to see if a container exists on Docker Hub (or whatever registry you're connected to), this will allow you to take a look.
+
+```bash
+docker search python # see all the various flavors of Python containers you can run
+docker search node # see all the various flavors of Node.js containers you can run
+```
