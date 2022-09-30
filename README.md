@@ -83,3 +83,15 @@ docker inspect node
 ```
 
 This will dump out a lot of info about the container. Helpful when figuring out what's going on with a container
+
+### pause / unpause
+
+```bash
+docker run -dit jturpin/hollywood hollywood
+docker ps # see container running
+docker pause <ID or name>
+docker ps # see container paused
+docker unpause <ID or name>
+docker ps # see container running again
+docker kill <ID or name> # see container is gone
+```
