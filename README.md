@@ -179,3 +179,11 @@ docker build . # this will build your container
 
 `FROM` pulls in the image.
 `CMD` This is what you want Docker to do when someone runs the container. Only one `CMD` in a dockerfile.
+
+```bash
+docker run <ID> # ID = hash of the container
+
+# It's a lot easier if you give your container a name
+docker build . --tag my-node-app ## or -t instead of --tag
+docker run my-node-app
+```
