@@ -156,3 +156,7 @@ If you want to see if a container exists on Docker Hub (or whatever registry you
 docker search python # see all the various flavors of Python containers you can run
 docker search node # see all the various flavors of Node.js containers you can run
 ```
+
+## Docker files
+
+Building your own containers.  Docker has a special file called a `Dockerfile` which allows you to outline how a container will be built. Each line in a Docker file is a new a directive of how to change your Docker container.
