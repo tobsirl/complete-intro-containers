@@ -170,3 +170,9 @@ FROM node:12-stretch
 
 CMD ["node", "-e", "console.log(\"hi lol\")"]
 ```
+
+`FROM` and `CMD` are called _instructions
+
+```bash
+docker build . # this will build your container
+```
