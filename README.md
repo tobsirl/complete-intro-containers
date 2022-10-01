@@ -187,3 +187,10 @@ docker run <ID> # ID = hash of the container
 docker build . --tag my-node-app ## or -t instead of --tag
 docker run my-node-app
 ```
+
+You can also version your containers
+
+```bash
+docker build -t my-node-app:1 .
+docker run my-node-app:1
+```
