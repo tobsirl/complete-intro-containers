@@ -160,3 +160,13 @@ docker search node # see all the various flavors of Node.js containers you can r
 ## Docker files
 
 Building your own containers.  Docker has a special file called a `Dockerfile` which allows you to outline how a container will be built. Each line in a Docker file is a new a directive of how to change your Docker container.
+
+A big key with Docker container is that they're supposed to be disposable. You should be able to create them and throw them away as many times as necessary.
+
+### basic dockerfile
+
+```bash
+FROM node:12-stretch
+
+CMD ["node", "-e", "console.log(\"hi lol\")"]
+```
