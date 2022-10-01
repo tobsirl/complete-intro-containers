@@ -176,3 +176,6 @@ CMD ["node", "-e", "console.log(\"hi lol\")"]
 ```bash
 docker build . # this will build your container
 ```
+
+`FROM` pulls in the image.
+`CMD` This is what you want Docker to do when someone runs the container. Only one `CMD` in a dockerfile.
