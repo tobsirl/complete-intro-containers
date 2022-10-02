@@ -14,13 +14,6 @@ async function start() {
     },
   });
 
-  await server.register({
-    plugin: require('hapi-pino'),
-    options: {
-      prettyPrint: false,
-    },
-  });
-
   await server.start();
 
   return server;
