@@ -18,7 +18,7 @@ async function start() {
     method: 'GET',
     path: '/code',
     handler() {
-      return { code: process.env.CODE };
+      return { code: 'Hi from the container' };
     },
   });
 
