@@ -14,6 +14,14 @@ async function start() {
     },
   });
 
+  server.route({
+    method: 'GET',
+    path: '/code',
+    handler() {
+      return { code: process.env.CODE };
+    },
+  });
+
   await server.start();
 
   return server;
