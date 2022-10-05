@@ -202,3 +202,9 @@ docker run my-node-app:1
 Bind Mounts have been around since the early days of docker. Bind mounts have limited functionality compared to volumes.
 
 When you use a bind mount, a file or directory on the host machine is mounted into a container. The file or directory is referenced by its absolute path on the host machine.
+
+### Volumes
+
+Bind mounts are great for when you need to share data between your host and your container as we just learned. Volumes, on the other hand, are so that your containers can maintain state between runs.
+
+So if you have a container that runs and the next time it runs it needs the results from the previous time it ran, volumes are going to be helpful. Volumes can not only be shared by the same container-type between runs but also between different containers. Maybe if you have two containers and you want to log to consolidate your logs to one place, volumes could help with that.
