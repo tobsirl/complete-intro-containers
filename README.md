@@ -219,3 +219,7 @@ xxxxxxxxxxxx        bridge              bridge              local
 xxxxxxxxxxxx        host                host                local
 xxxxxxxxxxxx        none                null                local
 ```
+
+`bridge` network exists all the time and you can attach to it if you want. However Docker recommends against it.
+`host` network is the host computer.
+`null` driver is one that you'd use if you wanted to use some other provider or if you wanted to do it manually yourself.
