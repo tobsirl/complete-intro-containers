@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@hapi/hapi": "^20.2.2",
-    "mongodb": "^4.10.0"
+    "mongodb": "3.3"
   }
 }
