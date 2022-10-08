@@ -231,3 +231,22 @@ xxxxxxxxxxxx        none                null                local
 Docker Compose allows us the ability to coordinate multiple containers and do so with one YAML file.
 
 This is great if you're developing a Node.js app and it requires a database, caching, or even if you have two+ separate apps in two+ separate containers that depend on each other or all the above! Docker Compose makes it really simple to define the relationship between these containers and get them all running with one `docker-compose up`.
+
+### docker-compose.yml
+```yml
+version: "3"
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/node/code
+      - /home/node/code/node_modules
+    links:
+      - db
+    environment:
+      MONGO_CONNECTION_STRING: mongodb://db:27017
+  db:
+    image: mongo:3
+```
