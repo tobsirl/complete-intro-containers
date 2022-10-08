@@ -233,6 +233,7 @@ Docker Compose allows us the ability to coordinate multiple containers and do so
 This is great if you're developing a Node.js app and it requires a database, caching, or even if you have two+ separate apps in two+ separate containers that depend on each other or all the above! Docker Compose makes it really simple to define the relationship between these containers and get them all running with one `docker-compose up`.
 
 ### docker-compose.yml
+
 ```yml
 version: "3"
 services:
@@ -250,3 +251,9 @@ services:
   db:
     image: mongo:3
 ```
+
+`services` defines the containers we need in our app.
+
+`web` and `db`
+
+In `build` we determine which ports to expose in ports, which volumes to make in volumes and any `environment` variables that are required.
