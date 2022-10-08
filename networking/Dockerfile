@@ -1,4 +1,6 @@
-FROM node:12-stretch
+FROM node:latest
+
+RUN npm i -g nodemon
 
 USER node
 
@@ -12,4 +14,4 @@ RUN npm ci
 
 COPY --chown=node:node . .
 
-CMD ["node", "index.js"]
+CMD ["nodemon", "index.js"]
