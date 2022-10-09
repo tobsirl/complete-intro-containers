@@ -256,4 +256,13 @@ services:
 
 `web` and `db`
 
-In `build` we determine which ports to expose in ports, which volumes to make in volumes and any `environment` variables that are required.
+In `build` we determine which ports to expose in ports, which volumes to make in volumes and any `environment` variables that are required
+
+## Kubernetes
+
+Kubernetes is a container orchestration tool. It allows you to manage large, complicated clusters of containers to multiple different hosts.
+
+It's a complicated tool that solves complicated problems.
+
+- The `master` is a server that coordinates everything else. This is the brain on of your cluster. Some cloud providers actually won't charge you to run the master.
+- `Nodes` are the worker servers that are actually going to be running your containers. One node can one or multiple containers.
