@@ -268,3 +268,4 @@ It's a complicated tool that solves complicated problems.
 - `Nodes` are the worker servers that are actually going to be running your containers. One node can one or multiple containers.
 - Technically, a Node is just a deploy target. It could itself be a VM or a container, or as we said it could be a metal-and-silicon server. It's not really important. Just think of it as a destination for containers.
 - A pod is bascially an atom to a cluster: it's a thing that can't be divided and thus needs to be deployed together. Imagine if you had several types of containers that all worked together as one unit and wouldn't work without each other. 
+- A service is a group of pods that make up one backend, so to speak. Think one microservice is a group of microservices. 
