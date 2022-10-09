@@ -266,3 +266,5 @@ It's a complicated tool that solves complicated problems.
 
 - The `master` is a server that coordinates everything else. This is the brain on of your cluster. Some cloud providers actually won't charge you to run the master.
 - `Nodes` are the worker servers that are actually going to be running your containers. One node can one or multiple containers.
+- Technically, a Node is just a deploy target. It could itself be a VM or a container, or as we said it could be a metal-and-silicon server. It's not really important. Just think of it as a destination for containers.
+- A pod is bascially an atom to a cluster: it's a thing that can't be divided and thus needs to be deployed together. Imagine if you had several types of containers that all worked together as one unit and wouldn't work without each other. 
